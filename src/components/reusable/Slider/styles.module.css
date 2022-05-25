@@ -1,0 +1,109 @@
+.slider {
+  height: 100vh;
+  width: 100vw;
+  margin: 100px auto 80px auto;
+  overflow: hidden;
+}
+.slider-img {
+  display: flex;
+  align-items: center;
+}
+.slider-img-content {
+  position: relative;
+}
+.slider-img-content > span {
+  width: 100vw !important;
+  min-width: 320px;
+  height: 100vh !important;
+  object-fit: cover;
+  object-position: top;
+}
+.slider-img-content-text {
+  position: absolute;
+  top: 10vh;
+  left: 20%;
+  bottom: 0;
+  right: 0;
+  max-width: 445px;
+  padding: 0 15px;
+  color: var(--four);
+  text-align: left;
+}
+@media only screen and (max-width: 710px) {
+  .slider-img-content-text {
+    position: absolute;
+    top: 5vh;
+    left: 5%;
+    bottom: 0;
+    right: 0;
+    max-width: 445px;
+    padding: 0 15px;
+    color: var(--four);
+    text-align: left;
+  }
+}
+.slider-img-content-text-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.533);
+}
+.slider-img-content-text--h1 {
+  font-size: 1.9rem;
+}
+.slider-img-content-text--h3 {
+  margin: 20px 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.slider-img-content-text--btn {
+  width: 200px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border: 1px solid var(--four);
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.slider-img-content-text--btn:hover {
+  background-color: var(--four);
+}
+.slider-img-content-text--btn:hover a {
+  color: var(--three);
+}
+.slider-img-content-text--btn a {
+  color: var(--four);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 50px;
+  transition: all 0.5s;
+}
+.slider-img-content-text-icons--icons {
+  margin: 20px 40px 0 0;
+  color: var(--four);
+  font-size: 2.5rem;
+  transition: all 0.5s;
+}
+.slider-point {
+  position: absolute;
+  width: 200px;
+  margin: 15px auto;
+  left: 0;
+  text-align: center;
+  right: 0;
+}
+.slider-point--span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 15px;
+  background-color: #d1d1d1;
+}
+.slider-point--span--active {
+  transition: 500ms all;
+  background-color: #000000;
+}

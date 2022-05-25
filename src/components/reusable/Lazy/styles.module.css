@@ -1,0 +1,201 @@
+.loadingio-content {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--one);
+  z-index: 1000000000;
+}
+.loadingio-spinner-ellipsis-t5efiqc4s9 {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  overflow: hidden;
+}
+.loadingio-spinner-ellipsis-t5efiqc4s9 img {
+  width: 250px;
+  height: 250px;
+  animation: rotate 1.5s infinite;
+}
+.lazy {
+  animation: lazy-load 900ms linear forwards;
+}
+@keyframes lazy-load {
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* <div>
+  <!DOCTYPE html>
+<html 
+   lang="es"
+   itemtype="https://schema.org/WebPage"
+>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C2BY4Q3M0F"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C2BY4Q3M0F');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics end-->
+    <!-- Optimization SEO -->
+    <link rel="canonical" href="https://www.uhg.edu.py/">
+    <meta name="keywords"content="uhg,hispano,guarani,universidad,aprender,cursos,odontología,carreras,2021,cones,habilitada,UHG,Hispano Guarani,Universidad,CONES,Radiología,curso,mejor,Paraguay,py,2022,2023,2021">
+    <meta name="author" content="DesignIvanX-ivandcdesign@gmail.com">
+    <meta name="copyright" content="Universidad Hispano Guarani (UHG) - Paraguay">
+    <meta name="description" content="Universidad `Hispano Guarani` UHG Institución de educación se proyecta como un espacio de reflexión y construcción, aprende a ser un profesional ya!.">
+    <!-- og -->
+    <meta property="og:title" content="Universidad Hispano Guarani (UHG) - Paraguay" />
+    <meta property="og:url" content="https://www.uhg.edu.py/">
+    <meta property="og:description" content="Universidad `Hispano Guarani` UHG Institución de educación se proyecta como un espacio de reflexión y construcción, aprende a ser un profesional ya!." />
+    <meta property="og:site_name" content="Universidad Hispano Guarani (UHG) - Paraguay">
+    <meta property="og:type" content="website">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <!-- og end -->
+    <!-- End Optimization SEO -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0"> 
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fd783b0397.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="src/img/logo/icon-logo.ico">
+    <link rel="stylesheet" href="src/style/config.css">
+    <link rel="stylesheet" href="src/style/nav.css">
+    <link rel="stylesheet" href="src/style/components/home.css">
+    <link rel="stylesheet" href="src/style/whatsapp.css">
+    <link rel="stylesheet" href="src/style/footer.css">
+    <title>Universidad Hispano Guarani (UHG) - Paraguay</title>
+    <!-- SEO schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.uhg.edu.py/#organization",
+        "name": "Universidad Hispano Guarani (UHG) - Paraguay",
+        "url": "https://www.uhg.edu.py/",
+        "sameAs": [
+          "https://www.facebook.com/uniuhg",
+          "https://www.instagram.com/universidadhispanoguarani/",
+          "https://twitter.com/uniUHG?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+        ],
+        "image": {
+          "@id": "https://www.uhg.edu.py/#logo"
+        }
+      },
+      "logo": {
+          "@type": "ImageObject",
+          "@id": "https://www.uhg.edu.py/#logo",
+          "inLanguage": "es",
+          "url": "https://www.uhg.edu.py/src/img/logo/icon-logo.ico",
+          "contentUrl": "https://www.uhg.edu.py/src/img/logo/icon-logo.ico",
+          "width": 1024,
+          "height": 1021,
+          "caption": "Universidad Hispano Guarani (UHG) - Paraguay"
+        },
+        "image": { "@id": "https://www.uhg.edu.py/#logo" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.uhg.edu.py/#website",
+        "url": "https://www.uhg.edu.py/",
+        "name": "Universidad Hispano Guarani (UHG) - Paraguay",
+        "description": "Nunca pares de aprender",
+        "publisher": {
+          "@id": "https://www.uhg.edu.py/#organization"
+        },
+        "inLanguage": "es"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.uhg.edu.py/#webpage",
+        "url": "https://www.uhg.edu.py/",
+        "name": "Universidad Hispano Guarani (UHG) - Paraguay",
+        "isPartOf": {
+          "@id": "https://www.uhg.edu.py/#website"
+        },
+        "about": {
+          "@id": "https://www.uhg.edu.py/#organization"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://www.uhg.edu.py/#primaryimage"
+        },
+        "description": "Universidad Hispano Guarani (UHG) Institución de educación se proyecta como un espacio de reflexión y construcción, aprende a ser un profesional ya!. (Paraguay)",
+        "breadcrumb": {
+          "@id": "https://www.uhg.edu.py/#breadcrumb"
+        },
+        "inLanguage": "es",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": ["https://www.uhg.edu.py/"]
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://www.uhg.edu.py/#primaryimage",
+        "inLanguage": "es",
+        "url": "https://www.uhg.edu.py/src/img/logo/logouhg.webp",
+        "contentUrl": "https://www.uhg.edu.py/src/img/logo/logouhg.webp",
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.uhg.edu.py/#webpage",
+        "url": "https://www.uhg.edu.py/",
+        "name": "Universidad Hispano Guaraní (UHG) - Paraguay",
+        "isPartOf": { "@id": "https://www.uhg.edu.py/#website" },
+        "about": { "@id": "https://www.uhg.edu.py/#organization" },
+        "primaryImageOfPage": { "@id": "https://www.uhg.edu.py/#primaryimage" },
+        "datePublished": "2019-10-23T00:41:21+00:00",
+        "dateModified": "2021-07-19T17:40:35+00:00",
+        "description": "Universidad Hispano Guarani (UHG) Institución de educación se proyecta como un espacio de reflexión y construcción, aprende a ser un profesional ya!. (Paraguay)",
+        "breadcrumb": { "@id": "https://www.uhg.edu.py/#breadcrumb" },
+        "inLanguage": "es",
+        "potentialAction": [
+          { "@type": "ReadAction", "target": ["https://www.uhg.edu.py/"] }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.uhg.edu.py/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio"
+          }
+        ]
+      }
+    ]
+  }
+</script>
+<!-- SEO schema end -->
+  </head>
+  <body>
+    </script>
+    
+    
+      <script src="src/scripts/index.js"></script>
+    </div> */

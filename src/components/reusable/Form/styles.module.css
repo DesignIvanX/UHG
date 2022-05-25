@@ -1,0 +1,145 @@
+.form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(244, 246, 243, 0.27450980392156865);
+  z-index: 1000000000000000000000000000000;
+  display: none;
+}
+
+.form-btn {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 90px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--one);
+  border-radius: 50px;
+  transition: 500ms all;
+}
+
+.form-btn:hover {
+  background-color: #344f7c;
+}
+
+.form-x {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px;
+  cursor: pointer;
+  z-index: 100000000000000000;
+}
+
+.form-btn-envelope {
+  background-color: transparent;
+  border: 0;
+  text-align: center;
+  color: var(--four);
+}
+
+.form-c {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-content {
+  height: 70vh;
+  width: 70vh;
+  background-color: var(--one);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-content-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-content-text h2 {
+  font-size: 2rem;
+  color: var(--four);
+}
+
+.form-content-text p {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: var(--four);
+}
+
+.form-content-main {
+}
+
+.form-content-main-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-content-main-div label {
+  display: block;
+  text-align: center;
+  color: var(--four);
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0px 0px 10px 0px;
+}
+
+.form-content-main-div input {
+  margin: 0px 0px 10px 0px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.form-content-main-div input::placeholder {
+  color: var(--three);
+}
+
+.form-content-main-div select {
+  margin: 0px 0px 10px 0px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.form-content-main-div option {
+}
+
+.form-content-main-btn {
+  display: inline-block;
+  margin-top: 20px;
+  border: 0;
+  background-color: var(--four);
+  color: var(--one);
+  padding: 10px 85px 12px 85px;
+  border: 1px solid var(--four);
+  border-radius: 20px;
+  transition: 500ms all;
+  cursor: pointer;
+}
+
+.form-content-main-btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--four);
+  color: var(--four);
+}

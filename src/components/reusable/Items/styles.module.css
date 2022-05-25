@@ -1,0 +1,61 @@
+.section-why {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1060px;
+  margin: 50px auto 0px auto;
+}
+.section-why-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.section-why--h2 {
+  font-weight: bold;
+  color: var(--one);
+  margin-bottom: 50px;
+  font-size: 2rem;
+  text-align: center;
+}
+.section-why-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #b5bec5;
+  border-radius: 10px;
+  box-shadow: none;
+  margin: 0.5rem;
+  width: 250px;
+  height: 300px;
+  transition: 1s all;
+}
+.section-why-content-box:hover {
+  transform: translateY(-10px);
+  background-color: var(--one);
+}
+.section-why-content-box--icon {
+  margin: 0 auto 1rem;
+  color: var(--one);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s all;
+}
+.section-why-content-box:hover .section-why-content-box--icon {
+  color: var(--two);
+}
+.section-why-content-box--h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--three);
+  transition: 500ms all;
+  padding: 10px;
+}
+.section-why-content-box:hover .section-why-content-box--h3 {
+  color: var(--four);
+}

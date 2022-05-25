@@ -1,0 +1,26 @@
+.tour {
+  min-width: 320px;
+  width: 100%;
+}
+.tour .tour--h2 {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 10px 10px 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #000000a6;
+}
+.tour .tour__video {
+  margin: 30px 0;
+  text-align: center;
+}
+.tour .tour__video .tour__video--video {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 30px;
+}
+@media screen and (max-width: 550px) {
+  .tour .tour__video .tour__video--video {
+    width: 100%;
+  }
+}
