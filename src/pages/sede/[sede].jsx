@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import Sede from "@components/sede";
+import Sede from "@components/Sede";
 import NotFound from "@pages/notFound";
 import Seo from "@seo/Seo";
 
