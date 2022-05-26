@@ -6,6 +6,7 @@ module.exports = {
     node: true,
     es6: true,
   },
+  parser: "babel-eslint",
   extends: [
     "next",
     "next/core-web-vitals",

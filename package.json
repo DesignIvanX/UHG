@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build-export": "next build && next export",
-    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +15,7 @@
     "react-icons": "4.3.1"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5"
   }
