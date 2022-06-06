@@ -29,76 +29,80 @@ const Testimonials = () => {
   return (
     <section className={styles["testimonials"]}>
       <div className={styles["testimonialsContent"]}>
-        <AiOutlineArrowLeft className={styles["iconLeft"]} id="iconLeft" />
+        <section className={styles["testimonialsContentWhere"]}>
+          <AiOutlineArrowLeft className={styles["iconLeft"]} id="iconLeft" />
+
+          <AiOutlineArrowRight className={styles["iconRight"]} id="iconRight" />
+        </section>
         <section
           className={`${styles["testimonialsBody"]} testimonialsBodyShow`}
           id="testimonialsBody"
           data-id="1"
         >
-          <div className={styles["testimonialsText"]}>
-            <h2 className={styles["testimonialsH2"]}>
-              Vivian Alberto Irala Benítez
-            </h2>
-            <h3 className={styles["testimonialsH3"]}>
-              ¿Qué es lo que más te gusta de la UHG?
-            </h3>
-            <p className={styles["testimonialsP"]}>
-              La practicidad de las clases virtuaes, la plataforma virtual es
-              muy completa.
-            </p>
-            <h3 className={styles["testimonialsH3"]}>
-              Si alguien te pregunta por la UHG ¿Qué le dirias?
-            </h3>
-            <p className={styles["testimonialsP"]}>
-              Excelentes docentes, infraestructura y facilidad de pagos
-            </p>
-          </div>
-
           <figure className={styles["testimonialsPinture"]}>
             <Image
               src="/static/testimonials/43.webp"
               alt=""
-              width="300px"
-              height="300px"
+              width="200px"
+              height="150px"
               className={styles["testimonialsImg"]}
             />
           </figure>
+          <div className={styles["testimonialsText"]}>
+            <h2 className={styles["testimonialsH2"]}>
+              Vivian Alberto Irala Benítez
+            </h2>
+            <h3 className={styles["testimonialsH3"]}>Enfermería</h3>
+            <p className={styles["testimonialsP"]}>
+              <strong>¿Qué es lo que más te gusta de la UHG?</strong>
+              La practicidad de las clases virtuales, la plataforma virtual es
+              muy completa.
+              <strong>Si alguien te pregunta por la UHG ¿Qué le dirias?</strong>
+              Excelentes docentes, infraestructura y facilidad de pagos
+            </p>
+          </div>
         </section>
+
         <section
           className={styles["testimonialsBody"]}
           id="testimonialsBody"
           data-id="2"
         >
-          <div className={styles["testimonialsText"]}>
-            <h2 className={styles["testimonialsH2"]}>Mirna Figueredo</h2>
-            <h3 className={styles["testimonialsH3"]}>
-              Si alguien te pregunta por la UHG ¿Que le dirias?
-            </h3>
-            <p className={styles["testimonialsP"]}>
-              Que no nos abandonó en la pandemia, que buscarón la solución y
-              muchas opciones para que no perdamos el año
-            </p>
-            <p className={styles["testimonialsP"]}>
-              Fue la mejor elección que hice. ¡Porque lleno todas mis
-              expectativas!
-            </p>
-          </div>
-
           <figure className={styles["testimonialsPinture"]}>
             <Image
               src="/static/testimonials/41.png"
               alt=""
-              width="300px"
-              height="300px"
+              width="200px"
+              height="150px"
               className={styles["testimonialsImg"]}
             />
           </figure>
+          <div className={styles["testimonialsText"]}>
+            <h2 className={styles["testimonialsH2"]}>Mirna Figueredo</h2>
+            <h3 className={styles["testimonialsH3"]}>Odontología</h3>
+            <p className={styles["testimonialsP"]}>
+              <strong>Si alguien te pregunta por la UHG ¿Que le dirias?</strong>
+              Que no nos abandonó en la pandemia, que buscarón la solución y
+              muchas opciones para que no perdamos el año fue la mejor elección
+              que hice. ¡Porque lleno todas mis expectativas!
+            </p>
+          </div>
         </section>
+
         <section
           className={styles["testimonialsBody"]}
           id="testimonialsBody"
           data-id="3"
         >
+          <figure className={styles["testimonialsPinture"]}>
+            <Image
+              src="/static/testimonials/40.png"
+              alt=""
+              width="200px"
+              height="150px"
+              className={styles["testimonialsImg"]}
+            />
+          </figure>
           <div className={styles["testimonialsText"]}>
             <h2 className={styles["testimonialsH2"]}>Elizabeth González</h2>
             <p className={styles["testimonialsP"]}>
@@ -109,18 +113,7 @@ const Testimonials = () => {
               que estudien aquí. Excelentes alumnos y docentes.
             </p>
           </div>
-
-          <figure className={styles["testimonialsPinture"]}>
-            <Image
-              src="/static/testimonials/40.png"
-              alt=""
-              width="300px"
-              height="300px"
-              className={styles["testimonialsImg"]}
-            />
-          </figure>
         </section>
-        <AiOutlineArrowRight className={styles["iconRight"]} id="iconRight" />
       </div>
     </section>
   );

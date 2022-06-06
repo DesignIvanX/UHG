@@ -3,48 +3,43 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 1060px;
-  margin: 50px auto 0px auto;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  padding: 0 20px;
 }
 .section-why-content {
   display: flex;
-  align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  text-align: center;
+  max-width: 1000px;
+  min-width: 300px;
 }
 .section-why--h2 {
   font-weight: bold;
-  color: var(--one);
-  margin-bottom: 50px;
+  color: #030f4b;
   font-size: 2rem;
   text-align: center;
+  margin: 50px 15px;
 }
 .section-why-content-box {
   display: flex;
-  align-items: center;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid #b5bec5;
+  background-color: #335dff;
+  box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35),
+    0px 4px 6px rgba(51, 93, 255, 0.25);
   border-radius: 10px;
-  box-shadow: none;
-  margin: 0.5rem;
-  width: 250px;
-  height: 300px;
-  transition: 1s all;
+  padding: 5px 10px;
+  width: 300px;
+  text-align: center;
+  margin: 10px 10px 50px 10px;
+  color: var(--four);
+  transition: 500ms all;
 }
 .section-why-content-box:hover {
-  transform: translateY(-10px);
-  background-color: var(--one);
+  background-color: #3056ef;
 }
 .section-why-content-box--icon {
-  margin: 0 auto 1rem;
-  color: var(--one);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 1s all;
+  width: 45px;
 }
 .section-why-content-box:hover .section-why-content-box--icon {
   color: var(--two);
@@ -52,10 +47,8 @@
 .section-why-content-box--h3 {
   font-weight: 400;
   font-size: 1rem;
-  color: var(--three);
   transition: 500ms all;
   padding: 10px;
 }
 .section-why-content-box:hover .section-why-content-box--h3 {
-  color: var(--four);
 }

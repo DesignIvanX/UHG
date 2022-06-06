@@ -1,14 +1,15 @@
 import React from "react";
 import Seo from "@seo/Seo";
 import WhatsApp from "@components/reusable/WhatsApp/WhatsApp";
-import Testimonials from "@components/reusable/Testimonials/Testimonials";
-import Header from "@components/reusable/Header/Header";
-import Information from "@components/Information";
+// import Testimonials from "@components/reusable/Testimonials/Testimonials";
+import Slider from "@components/reusable/Slider/Slider";
+// import Information from "@components/Information";
 import Items from "@components/reusable/Items/Items";
-import Social from "@components/reusable/Social/Social";
+import Blog from "@components/reusable/Blog/index";
+import Sections from "@components/reusable/Sections/index";
+// import Social from "@components/reusable/Social/Social";
 import Video from "@components/reusable/Video/index";
 import styles from "./style/Home.module.css";
-// import Slider from "@components/reusable/Slider/Slider";
 function Home() {
   return (
     <div>
@@ -53,13 +54,14 @@ function Home() {
       />
       <main className={styles["main"]}>
         <div className="home">
-          {/* <Slider /> */}
-          <Header />
-          <Information />
-          <Social />
-          <Testimonials />
+          <Slider />
+          {/* <Information /> */}
+          {/* <Social /> */}
+          <Sections />
+          <Blog />
           <Video />
           <Items />
+          {/* <Testimonials /> */}
         </div>
         {/* <Modal /> */}
         {/* <Form /> */}
