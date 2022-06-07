@@ -6,7 +6,7 @@
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(244, 246, 243, 0.27450980392156865);
+  background-color: rgb(244, 246, 243);
   z-index: 1000000000000000000000000000000;
   display: none;
 }
@@ -20,9 +20,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--one);
+  background-color: #335dff;
   border-radius: 50px;
   transition: 500ms all;
+  z-index: 1000;
 }
 
 .form-btn:hover {
@@ -56,9 +57,10 @@
 
 .form-content {
   height: 70vh;
-  width: 70vh;
-  background-color: var(--one);
-  border-radius: 20px;
+  max-width: 70vh;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 0 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,15 +74,18 @@
 
 .form-content-text h2 {
   font-size: 2rem;
-  color: var(--four);
+  font-weight: bold;
+  text-align: center;
+  color: #030f4b;
 }
 
 .form-content-text p {
   width: 70%;
   text-align: center;
   margin: 0 auto;
-  font-size: 1rem;
-  color: var(--four);
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #4a4e63;
 }
 
 .form-content-main {
@@ -107,10 +112,12 @@
   border-radius: 5px;
   outline: none;
   border: none;
+  background-color: #335dff;
+  color: #ffffff;
 }
 
 .form-content-main-div input::placeholder {
-  color: var(--three);
+  color: #ffffff;
 }
 
 .form-content-main-div select {
@@ -126,16 +133,17 @@
 }
 
 .form-content-main-btn {
-  display: inline-block;
-  margin-top: 20px;
-  border: 0;
-  background-color: var(--four);
-  color: var(--one);
-  padding: 10px 85px 12px 85px;
-  border: 1px solid var(--four);
-  border-radius: 20px;
+  display: block;
   transition: 500ms all;
   cursor: pointer;
+  padding: 10px 60px;
+  background: #335dff;
+  box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35),
+    0px 4px 6px rgba(51, 93, 255, 0.25);
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  margin: 0 auto;
 }
 
 .form-content-main-btn:hover {

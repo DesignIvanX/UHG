@@ -28,6 +28,9 @@ const Testimonials = () => {
   }, []);
   return (
     <section className={styles["testimonials"]}>
+      <h2 className={styles["testimonials--h2"]}>
+        TESTIMONIOS DE NUESTROS ALUMNOS
+      </h2>
       <div className={styles["testimonialsContent"]}>
         <AiOutlineArrowLeft className={styles["iconLeft"]} id="iconLeft" />
         <section

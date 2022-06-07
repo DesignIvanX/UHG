@@ -10,11 +10,11 @@ const Form = () => {
     career: "",
   });
   const handleClickOpen = () => {
-    const form = document.querySelector(".form");
+    const form = document.querySelector("#form");
     form.style.display = "block";
   };
   const handleClickClose = () => {
-    const form = document.querySelector(".form");
+    const form = document.querySelector("#form");
     form.style.display = "none";
   };
   const handleChange = (e) => {
@@ -48,7 +48,7 @@ const Form = () => {
           <BsEnvelope size="40px" />
         </button>
       </div>
-      <div className={styles["form"]}>
+      <div className={styles["form"]} id="form">
         <div className={styles["form-x"]} onClick={handleClickClose}>
           <AiFillCloseCircle size="50px" />
         </div>

@@ -3,6 +3,8 @@ import Seo from "@seo/Seo";
 import WhatsApp from "@components/reusable/WhatsApp/WhatsApp";
 import Testimonials from "@components/reusable/Testimonials/Testimonials";
 import Slider from "@components/reusable/Slider/Slider";
+import Form from "@components/reusable/Form/Form";
+// import Messenger from "@components/reusable/Messenger/index";
 // import Information from "@components/Information";
 import Items from "@components/reusable/Items/Items";
 import Blog from "@components/reusable/Blog/index";
@@ -55,8 +57,6 @@ function Home() {
       <main className={styles["main"]}>
         <div className="home">
           <Slider />
-          {/* <Information /> */}
-          {/* <Social /> */}
           <Sections />
           <Blog />
           <Testimonials />
@@ -64,7 +64,8 @@ function Home() {
           <Items />
         </div>
         {/* <Modal /> */}
-        {/* <Form /> */}
+        <Form />
+        {/* <Messenger /> */}
         <WhatsApp number={"+595985286032"} />
       </main>
     </div>
