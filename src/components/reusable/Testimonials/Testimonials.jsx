@@ -29,29 +29,28 @@ const Testimonials = () => {
   return (
     <section className={styles["testimonials"]}>
       <div className={styles["testimonialsContent"]}>
-        <section className={styles["testimonialsContentWhere"]}>
-          <AiOutlineArrowLeft className={styles["iconLeft"]} id="iconLeft" />
-
-          <AiOutlineArrowRight className={styles["iconRight"]} id="iconRight" />
-        </section>
+        <AiOutlineArrowLeft className={styles["iconLeft"]} id="iconLeft" />
         <section
           className={`${styles["testimonialsBody"]} testimonialsBodyShow`}
           id="testimonialsBody"
           data-id="1"
         >
-          <figure className={styles["testimonialsPinture"]}>
-            <Image
-              src="/static/testimonials/43.webp"
-              alt=""
-              width="200px"
-              height="150px"
-              className={styles["testimonialsImg"]}
-            />
-          </figure>
           <div className={styles["testimonialsText"]}>
-            <h2 className={styles["testimonialsH2"]}>
-              Vivian Alberto Irala Benítez
-            </h2>
+            <div className={styles["testimonialsTextImage"]}>
+              <h2 className={styles["testimonialsH2"]}>
+                Vivian Alberto Irala Benítez
+              </h2>
+              <figure className={styles["testimonialsPinture"]}>
+                <Image
+                  src="/static/testimonials/43.webp"
+                  alt=""
+                  width="150px"
+                  height="100px"
+                  className={styles["testimonialsImg"]}
+                />
+              </figure>
+            </div>
+
             <h3 className={styles["testimonialsH3"]}>Enfermería</h3>
             <p className={styles["testimonialsP"]}>
               <strong>¿Qué es lo que más te gusta de la UHG?</strong>
@@ -68,17 +67,20 @@ const Testimonials = () => {
           id="testimonialsBody"
           data-id="2"
         >
-          <figure className={styles["testimonialsPinture"]}>
-            <Image
-              src="/static/testimonials/41.png"
-              alt=""
-              width="200px"
-              height="150px"
-              className={styles["testimonialsImg"]}
-            />
-          </figure>
           <div className={styles["testimonialsText"]}>
-            <h2 className={styles["testimonialsH2"]}>Mirna Figueredo</h2>
+            <div className={styles["testimonialsTextImage"]}>
+              <h2 className={styles["testimonialsH2"]}>Mirna Figueredo</h2>
+              <figure className={styles["testimonialsPinture"]}>
+                <Image
+                  src="/static/testimonials/41.png"
+                  alt=""
+                  width="200px"
+                  height="150px"
+                  className={styles["testimonialsImg"]}
+                />
+              </figure>
+            </div>
+
             <h3 className={styles["testimonialsH3"]}>Odontología</h3>
             <p className={styles["testimonialsP"]}>
               <strong>Si alguien te pregunta por la UHG ¿Que le dirias?</strong>
@@ -94,17 +96,20 @@ const Testimonials = () => {
           id="testimonialsBody"
           data-id="3"
         >
-          <figure className={styles["testimonialsPinture"]}>
-            <Image
-              src="/static/testimonials/40.png"
-              alt=""
-              width="200px"
-              height="150px"
-              className={styles["testimonialsImg"]}
-            />
-          </figure>
           <div className={styles["testimonialsText"]}>
-            <h2 className={styles["testimonialsH2"]}>Elizabeth González</h2>
+            <div className={styles["testimonialsTextImage"]}>
+              <h2 className={styles["testimonialsH2"]}>Elizabeth González</h2>
+              <figure className={styles["testimonialsPinture"]}>
+                <Image
+                  src="/static/testimonials/40.png"
+                  alt=""
+                  width="200px"
+                  height="150px"
+                  className={styles["testimonialsImg"]}
+                />
+              </figure>
+            </div>
+
             <p className={styles["testimonialsP"]}>
               Son muy responsables y dedicados como docentes, tienen paciencia y
               !Amo todo de la UHG! Todos son agradables. Lo mejor de llegar a la
@@ -114,6 +119,7 @@ const Testimonials = () => {
             </p>
           </div>
         </section>
+        <AiOutlineArrowRight className={styles["iconRight"]} id="iconRight" />
       </div>
     </section>
   );

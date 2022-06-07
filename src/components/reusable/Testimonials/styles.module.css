@@ -1,71 +1,79 @@
 .testimonials {
   width: 100%;
-  height: 380px;
-  padding: 50px;
+  height: 20vh;
+  margin: 150px 0 0 0;
 }
 .testimonialsContent {
   position: relative;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 50px auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.testimonialsContentWhere {
-  position: absolute;
-  right: 0;
-  top: 70px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  z-index: 10000;
+  justify-content: space-between;
 }
 .iconRight {
+  position: relative;
   cursor: pointer;
   padding: 10px;
   font-size: 2rem;
+  margin: 0 15px;
   background-color: #c4c4c4;
   border-radius: 100%;
   color: var(--four);
   transition: 500ms all;
-  margin: 0 0 0 10px;
+  z-index: 1000;
 }
 .iconRight:hover {
   background-color: #003294;
 }
 .iconLeft {
+  position: relative;
   cursor: pointer;
   padding: 10px;
   font-size: 2rem;
   background-color: #c4c4c4;
   border-radius: 100%;
   color: var(--four);
+  margin: 0 15px;
   transition: 500ms all;
-  margin: 0 0 0 10px;
+  z-index: 1000;
 }
 .iconLeft:hover {
   background-color: #003294;
 }
 .testimonialsBody {
   position: absolute;
-  top: 50px;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  overflow: hidden;
-  overflow-y: hidden;
   margin: 0 auto;
   opacity: 0;
   transition: opacity 1.5s;
+  background: #ffffff;
+  box-shadow: 0px 10px 15px 4px rgba(0, 0, 0, 0.1),
+    0px 4px 6px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 5px 25px;
+}
+@media screen and (max-width: 915px) {
+  .testimonialsBody {
+    margin: 0 10px;
+  }
 }
 .testimonialsText {
   position: relative;
   max-width: 350px;
   text-align: left;
 }
+.testimonialsTextImage {
+  display: flex;
+  align-items: center;
+}
 .testimonialsH2 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
   width: 200px;
   text-transform: uppercase;
@@ -83,6 +91,7 @@
 }
 .testimonialsImg {
   object-fit: cover;
+  border-radius: 100%;
   display: block;
 }
 

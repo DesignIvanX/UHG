@@ -1,7 +1,7 @@
 import React from "react";
 import Seo from "@seo/Seo";
 import WhatsApp from "@components/reusable/WhatsApp/WhatsApp";
-// import Testimonials from "@components/reusable/Testimonials/Testimonials";
+import Testimonials from "@components/reusable/Testimonials/Testimonials";
 import Slider from "@components/reusable/Slider/Slider";
 // import Information from "@components/Information";
 import Items from "@components/reusable/Items/Items";
@@ -59,9 +59,9 @@ function Home() {
           {/* <Social /> */}
           <Sections />
           <Blog />
+          <Testimonials />
           <Video />
           <Items />
-          {/* <Testimonials /> */}
         </div>
         {/* <Modal /> */}
         {/* <Form /> */}
