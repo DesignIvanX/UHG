@@ -32,7 +32,7 @@ const Form = () => {
     };
     console.log("HOLAAAAAAAAAAAAA", newUser);
     await axios
-      .post("http://localhost:4000/api/users", newUser)
+      .post("https://backend-sooty-eta.vercel.app/api/users", newUser)
       .then(function (response) {
         console.log(response);
       })

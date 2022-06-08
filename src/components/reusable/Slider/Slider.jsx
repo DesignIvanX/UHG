@@ -38,7 +38,7 @@ export default function Slider() {
                 : `${styles["slide"]}`
             }
           >
-            <img src={`/static/img-slider/img${index + 1}.jpg`} />
+            <img src={`/static/img-slider/img${index + 1}.png`} />
           </div>
         );
       })}
@@ -49,7 +49,7 @@ export default function Slider() {
       </div>
 
       <div className={`${styles["container-dots"]}`}>
-        {Array.from({ length: 5 }).map((item, index) => (
+        {Array.from({ length: 3 }).map((item, index) => (
           <div
             onClick={() => moveDot(index + 1)}
             className={
