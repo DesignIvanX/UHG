@@ -26,17 +26,25 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newUser = {
-      lastName: user.lastName,
+      name: user.lastName,
       email: user.email,
       career: user.career,
     };
-    await axios.post("https://7e4nwp.deta.dev/api/user/", newUser);
+    console.log("HOLAAAAAAAAAAAAA", newUser);
+    await axios
+      .post("http://localhost:4000/api/users", newUser)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
     setUser({
       lastName: "",
       email: "",
       career: "",
     });
-    document.location.href = "/";
+    // document.location.href = "/";
   };
   return (
     <div className={styles["outsite-form"]}>
