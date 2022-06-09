@@ -38,7 +38,7 @@ export default function Slider() {
                 : `${styles["slide"]}`
             }
           >
-            <img src={`/static/img-slider/img${index + 1}.png`} />
+            <img src={`/static/slider/img${index + 1}.png`} />
           </div>
         );
       })}

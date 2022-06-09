@@ -4,7 +4,7 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 export default function BtnSlider({ direction, moveSlide }) {
   return (
-    <button
+    <p
       onClick={moveSlide}
       className={
         direction === "next"
@@ -17,6 +17,6 @@ export default function BtnSlider({ direction, moveSlide }) {
       ) : (
         <AiOutlineArrowLeft className={styles["arrow-left"]} />
       )}
-    </button>
+    </p>
   );
 }

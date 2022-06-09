@@ -4,7 +4,6 @@
   margin: 100px auto 0 auto;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .slide {
   width: 100%;
@@ -62,6 +61,14 @@
   border: none;
   z-index: 100000000;
 }
+/* .btn-slide--btn { */
+/* background-color: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border: 0;
+  outline: none; */
+/* } */
 .arrow-left {
   color: #000000;
   position: absolute;
