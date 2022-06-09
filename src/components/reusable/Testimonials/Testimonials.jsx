@@ -40,9 +40,7 @@ const Testimonials = () => {
         >
           <div className={styles["testimonialsText"]}>
             <div className={styles["testimonialsTextImage"]}>
-              <h2 className={styles["testimonialsH2"]}>
-                Vivian Alberto Irala Benítez
-              </h2>
+              <h2 className={styles["testimonialsH2"]}>Vivian Benítez</h2>
               <figure className={styles["testimonialsPinture"]}>
                 <Image
                   src="/static/testimonials/43.webp"

@@ -30,7 +30,6 @@ const Form = () => {
       email: user.email,
       career: user.career,
     };
-    console.log("HOLAAAAAAAAAAAAA", newUser);
     await axios
       .post("https://backend-sooty-eta.vercel.app/api/users", newUser)
       .then(function (response) {

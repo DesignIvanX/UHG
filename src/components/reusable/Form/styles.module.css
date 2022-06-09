@@ -1,3 +1,6 @@
+.outsite-form {
+  z-index: 100000000;
+}
 .form {
   position: fixed;
   top: 0;
@@ -7,7 +10,7 @@
   height: 100%;
   width: 100%;
   background-color: rgb(244, 246, 243);
-  z-index: 1000000000000000000000000000000000000000000;
+  z-index: 100000000;
   display: none;
 }
 
@@ -23,7 +26,7 @@
   background-color: #335dff;
   border-radius: 50px;
   transition: 500ms all;
-  z-index: 1000000000000000000000000000000000000000000000000;
+  z-index: 10000000;
 }
 
 .form-btn:hover {
@@ -36,7 +39,7 @@
   top: 0;
   margin: 10px;
   cursor: pointer;
-  z-index: 10000000000000000000000000000000000000000000;
+  z-index: 1000000;
 }
 
 .form-btn-envelope {

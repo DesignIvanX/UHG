@@ -6,6 +6,11 @@ import {
 import Image from "next/image";
 import styles from "./style/Footer.module.css";
 const Footer = () => {
+  const handleClickOpen = () => {
+    const form = document.querySelector("#form");
+    form.style.display = "block";
+  };
+
   return (
     <footer className={styles["footer"]}>
       <div className={styles["footer-content"]}>
@@ -13,7 +18,10 @@ const Footer = () => {
           <p className={styles["footer-content-top--p"]}>
             Estas interesado? registrate para más información
           </p>
-          <a className={styles["footer-content-top--btn"]} href="/">
+          <a
+            className={styles["footer-content-top--btn"]}
+            onClick={handleClickOpen}
+          >
             Registrarse
           </a>
         </div>

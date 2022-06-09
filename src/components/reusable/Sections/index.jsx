@@ -2,7 +2,10 @@ import styles from "./styles.module.css";
 const index = () => {
   return (
     <section className={styles["sections"]}>
-      <a className={styles["sections-box"]} href="/">
+      <a
+        className={styles["sections-box"]}
+        href="https://www.uhg.edu.py/academic/carrers"
+      >
         <div className={styles["sections-box-image"]}>
           <img
             src="/static/img-slider/img2.jpg"
@@ -16,7 +19,10 @@ const index = () => {
         </div>
       </a>
 
-      <a className={styles["sections-box"]} href="/">
+      <a
+        className={styles["sections-box"]}
+        href="https://www.uhg.edu.py/contact"
+      >
         <div className={styles["sections-box-image"]}>
           <img
             src="/static/img-slider/img2.jpg"
@@ -30,7 +36,10 @@ const index = () => {
         </div>
       </a>
 
-      <a className={styles["sections-box"]} href="/">
+      <a
+        className={styles["sections-box"]}
+        href="https://www.uhg.edu.py/academic/postgraduate"
+      >
         <div className={styles["sections-box-image"]}>
           <img
             src="/static/img-slider/img2.jpg"

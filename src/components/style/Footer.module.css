@@ -39,6 +39,7 @@
   border-radius: 8px;
   color: #ffffff;
   transition: 500ms background-color;
+  cursor: pointer;
 }
 .footer-content-top--btn:hover {
   background-color: #fd5768;

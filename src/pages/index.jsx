@@ -58,7 +58,7 @@ function Home() {
         <div className="home">
           <Slider />
           <Sections />
-          <Blog />
+          {/* <Blog /> */}
           <Testimonials />
           <Video />
           <Items />
