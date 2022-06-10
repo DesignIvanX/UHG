@@ -47,6 +47,7 @@
   border: 0;
   text-align: center;
   color: var(--four);
+  cursor: pointer;
 }
 
 .form-c {
