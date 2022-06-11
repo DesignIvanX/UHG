@@ -36,22 +36,20 @@ const Form = () => {
         "https://http-nodejs-production-140a.up.railway.app/api/users",
         newUser
       )
-      .then(function (response) {
-        console.log(response);
+      .then(function () {
         alert.classList.add("displayBlock");
+        setUser({
+          lastName: "",
+          email: "",
+          career: "",
+        });
+        setTimeout(() => {
+          document.location.href = "/";
+        }, 1500);
       })
       .catch(function (error) {
         console.log(error);
       });
-    setUser({
-      lastName: "",
-      email: "",
-      career: "",
-    });
-
-    setTimeout(() => {
-      document.location.href = "/";
-    }, 1500);
   };
   return (
     <div className={styles["outsite-form"]}>
