@@ -31,7 +31,10 @@ const Form = () => {
       career: user.career,
     };
     await axios
-      .post("https://backend-sooty-eta.vercel.app/api/users", newUser)
+      .post(
+        "https://http-nodejs-production-140a.up.railway.app/api/users",
+        newUser
+      )
       .then(function (response) {
         console.log(response);
       })
