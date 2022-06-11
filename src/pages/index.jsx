@@ -4,12 +4,8 @@ import WhatsApp from "@components/reusable/WhatsApp/WhatsApp";
 import Testimonials from "@components/reusable/Testimonials/Testimonials";
 import Slider from "@components/reusable/Slider/Slider";
 import Form from "@components/reusable/Form/Form";
-// import Messenger from "@components/reusable/Messenger/index";
-// import Information from "@components/Information";
 import Items from "@components/reusable/Items/Items";
-import Blog from "@components/reusable/Blog/index";
 import Sections from "@components/reusable/Sections/index";
-// import Social from "@components/reusable/Social/Social";
 import Video from "@components/reusable/Video/index";
 import styles from "./style/Home.module.css";
 function Home() {
@@ -65,7 +61,6 @@ function Home() {
         </div>
         {/* <Modal /> */}
         <Form />
-        {/* <Messenger /> */}
         <WhatsApp number={"+595985286032"} />
       </main>
     </div>

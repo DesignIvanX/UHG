@@ -25,6 +25,7 @@ const Form = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const alert = document.querySelector("#form-alert");
     const newUser = {
       name: user.lastName,
       email: user.email,
@@ -37,6 +38,7 @@ const Form = () => {
       )
       .then(function (response) {
         console.log(response);
+        alert.classList.add("displayBlock");
       })
       .catch(function (error) {
         console.log(error);
@@ -46,7 +48,10 @@ const Form = () => {
       email: "",
       career: "",
     });
-    // document.location.href = "/";
+
+    setTimeout(() => {
+      document.location.href = "/";
+    }, 1500);
   };
   return (
     <div className={styles["outsite-form"]}>
@@ -108,8 +113,12 @@ const Form = () => {
                 </select>
               </div>
               <button className={styles["form-content-main-btn"]} type="submit">
-                Enviar
+                Registrarse
               </button>
+              <p className={styles["form-content-main--alert"]} id="form-alert">
+                Exito al registrarte, recibiras información de la carreras
+                seleccionada!
+              </p>
             </form>
           </div>
         </div>

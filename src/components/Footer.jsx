@@ -3,7 +3,6 @@ import {
   AiOutlineTwitter,
   AiFillFacebook,
 } from "react-icons/ai";
-import Image from "next/image";
 import styles from "./style/Footer.module.css";
 const Footer = () => {
   const handleClickOpen = () => {
@@ -28,7 +27,7 @@ const Footer = () => {
         <div className={styles["footer-content-image"]}>
           <img
             className={styles["footer-content-image--img"]}
-            src="/static/img1.png"
+            src="/static/footer/img1.png"
             alt=""
           />
         </div>
