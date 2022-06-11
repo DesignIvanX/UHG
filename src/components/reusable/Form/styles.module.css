@@ -158,5 +158,11 @@
   text-align: center;
   font-weight: 400;
   font-size: 0.9rem;
-  color: #335dff;
+  background-color: #335dff;
+  color: #ffffff;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 10px 35px -3px rgba(51, 93, 255, 0.35),
+    0px 4px 6px rgba(51, 93, 255, 0.25);
 }

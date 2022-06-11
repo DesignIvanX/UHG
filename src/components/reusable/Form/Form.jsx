@@ -114,8 +114,7 @@ const Form = () => {
                 Registrarse
               </button>
               <p className={styles["form-content-main--alert"]} id="form-alert">
-                Exito al registrarte, recibiras información de la carreras
-                seleccionada!
+                Exito, recibiras información de la carreras seleccionada!
               </p>
             </form>
           </div>
