@@ -48,7 +48,7 @@ a {
   transform: rotate(-43deg) translateY(-5px);
 }
 .toggleNav {
-  transform: translateX(0%);
+  transform: translateX(0%) !important;
 }
 .testimonialsBodyShow {
   opacity: 1 !important;
