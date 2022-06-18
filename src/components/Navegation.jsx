@@ -37,19 +37,19 @@ const Navegation = () => {
   const sedes = [
     {
       title: "ASUNCIÓN",
-      link: "https://www.uhg.edu.py/sedes/asuncion",
+      link: "https://www.uhg.edu.py/sede/asuncion",
     },
     {
       title: "CORONEL OVIEDO",
-      link: "https://www.uhg.edu.py/sedes/coroneloviedo",
+      link: "https://www.uhg.edu.py/sede/coroneloviedo",
     },
     {
       title: "CIUDAD DEL ESTE",
-      link: "https://www.uhg.edu.py/sedes/ciudaddeleste",
+      link: "https://www.uhg.edu.py/sede/ciudaddeleste",
     },
     {
       title: "SAN JUAN BAUTISTA MISIONES",
-      link: "https://www.uhg.edu.py/sedes/sanjuanbautistamisiones",
+      link: "https://www.uhg.edu.py/sede/sanjuanbautistamisiones",
     },
   ];
   const handleOnClickHamburger = () => {
