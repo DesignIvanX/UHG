@@ -25,29 +25,45 @@ const Form = () => {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const alert = document.querySelector("#form-alert");
+    const alertSuccess = document.querySelector("#form-alert--success");
+    const alertExist = document.querySelector("#form-alert--exist");
     const newUser = {
       name: user.lastName,
       email: user.email,
       career: user.career,
     };
     await axios
-      .post(
-        "https://http-nodejs-production-140a.up.railway.app/api/users",
-        newUser
-      )
-      .then(function () {
-        alert.classList.add("displayBlock");
-        setUser({
-          lastName: "",
-          email: "",
-          career: "",
-        });
-        setTimeout(() => {
-          document.location.href = "/";
-        }, 1500);
+      .get("https://http-nodejs-production-140a.up.railway.app/api/users/", {
+        params: {
+          email: user.email,
+        },
       })
-      .catch(function (error) {
+      .then(async (data) => {
+        if (data.data.body[0]) {
+          alertExist.classList.add("displayBlock");
+          return;
+        }
+        await axios
+          .post(
+            "https://http-nodejs-production-140a.up.railway.app/api/users/",
+            newUser
+          )
+          .then(function () {
+            alertSuccess.classList.add("displayBlock");
+            setUser({
+              lastName: "",
+              email: "",
+              career: "",
+            });
+            setTimeout(() => {
+              document.location.href = "/";
+            }, 1500);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      })
+      .catch((error) => {
         console.log(error);
       });
   };
@@ -113,7 +129,16 @@ const Form = () => {
               <button className={styles["form-content-main-btn"]} type="submit">
                 Registrarse
               </button>
-              <p className={styles["form-content-main--alert"]} id="form-alert">
+              <p
+                className={styles["form-content-main--alert"]}
+                id="form-alert--exist"
+              >
+                Este email ya esta registrado!
+              </p>
+              <p
+                className={styles["form-content-main--alert"]}
+                id="form-alert--success"
+              >
                 Exito, recibiras información de la carreras seleccionada!
               </p>
             </form>
