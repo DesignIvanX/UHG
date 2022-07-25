@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 const Testimonials = () => {
   const Slider = () => {
@@ -28,10 +29,22 @@ const Testimonials = () => {
   }, []);
   return (
     <section className={styles["testimonials"]}>
-      <h2 className={styles["testimonials--h2"]}>
+      <motion.h2
+        initial={{ x: -100, opacity: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className={styles["testimonials--h2"]}
+      >
         TESTIMONIOS DE NUESTROS ALUMNOS
-      </h2>
-      <div className={styles["testimonialsContent"]}>
+      </motion.h2>
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1 }}
+        className={styles["testimonialsContent"]}
+      >
         <AiOutlineArrowLeft className={styles["iconLeft"]} id="iconLeft" />
         <section
           className={`${styles["testimonialsBody"]} testimonialsBodyShow`}
@@ -121,7 +134,7 @@ const Testimonials = () => {
           </div>
         </section>
         <AiOutlineArrowRight className={styles["iconRight"]} id="iconRight" />
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -3,16 +3,23 @@ import {
   AiOutlineTwitter,
   AiFillFacebook,
 } from "react-icons/ai";
+import { motion } from "framer-motion";
 import styles from "./style/Footer.module.css";
+import Image from "next/image";
 const Footer = () => {
   const handleClickOpen = () => {
     const form = document.querySelector("#form");
     form.style.display = "block";
   };
-
   return (
     <footer className={styles["footer"]}>
-      <div className={styles["footer-content"]}>
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        whileInView={{ y: 0, opacity: 1 }}
+        className={styles["footer-content"]}
+      >
         <div className={styles["footer-content-top"]}>
           <p className={styles["footer-content-top--p"]}>
             Estas interesado? registrate para más información
@@ -31,7 +38,7 @@ const Footer = () => {
             alt=""
           />
         </div>
-      </div>
+      </motion.div>
       <div className={styles["footer-foot"]}>
         <div className={styles["footer-foot-logo"]}>
           <a

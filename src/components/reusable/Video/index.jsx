@@ -5,6 +5,7 @@ import {
   BsReplyFill,
   BsSoundwave,
 } from "react-icons/bs";
+import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 const Video = () => {
   const [time, setTime] = useState({
@@ -70,10 +71,22 @@ const Video = () => {
   };
   return (
     <main className={styles["main-video-player"]}>
-      <h2 className={styles["main-video-player--h2"]}>
+      <motion.h2
+        initial={{ x: 100, opacity: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        whileInView={{ x: 0, opacity: 1 }}
+        className={styles["main-video-player--h2"]}
+      >
         EXPLORA NUESTRAS INSTALACIONES
-      </h2>
-      <section className={styles["player"]}>
+      </motion.h2>
+      <motion.section
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1 }}
+        className={styles["player"]}
+      >
         <video
           className={styles["video"]}
           id="video"
@@ -135,7 +148,7 @@ const Video = () => {
             {time.seconds >= 10 ? time.seconds : "0" + time.seconds}
           </small>
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 };

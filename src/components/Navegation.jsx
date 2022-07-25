@@ -1,7 +1,7 @@
-import Logo from "@containers/Nav/Logo";
-import Dropdown from "@containers/Nav/Dropdown";
-import Link from "@containers/Nav/Link";
-import Button from "@containers/Nav/Button";
+import Logo from "container/Nav/Logo";
+import Dropdown from "container/Nav/Dropdown";
+import Link from "container/Nav/Link";
+import Button from "container/Nav/Button";
 import styles from "./style/Navegation.module.css";
 const Navegation = () => {
   const institucional = [

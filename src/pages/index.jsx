@@ -1,4 +1,3 @@
-import React from "react";
 import Seo from "@seo/Seo";
 import WhatsApp from "@components/reusable/WhatsApp/WhatsApp";
 import Testimonials from "@components/reusable/Testimonials/Testimonials";
@@ -7,6 +6,8 @@ import Form from "@components/reusable/Form/Form";
 import Items from "@components/reusable/Items/Items";
 import Sections from "@components/reusable/Sections/index";
 import Video from "@components/reusable/Video/index";
+// import Articles from "@components/reusable/Articles/index";
+// import { getAllFilesMetaData } from "../components/reusable/Blog/lib/mdx";
 import styles from "./style/Home.module.css";
 function Home() {
   return (
@@ -54,7 +55,7 @@ function Home() {
         <div className="home">
           <Slider />
           <Sections />
-          {/* <Blog /> */}
+          {/* <Articles posts={posts} /> */}
           <Testimonials />
           <Video />
           <Items />
@@ -66,5 +67,13 @@ function Home() {
     </div>
   );
 }
+
+// export async function getStaticProps() {
+//   const posts = await getAllFilesMetaData();
+
+//   return {
+//     props: { posts },
+//   };
+// }
 
 export default Home;

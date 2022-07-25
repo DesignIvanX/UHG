@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import styles from "./styles.module.css";
+import { useState } from "react";
+import { motion } from "framer-motion";
 import BtnSlider from "./BtnSlider/index";
 import dataSlider from "./DataSlider/index";
-
+import styles from "./styles.module.css";
 export default function Slider() {
   const [slideIndex, setSlideIndex] = useState(1);
 
@@ -27,7 +27,13 @@ export default function Slider() {
   };
 
   return (
-    <div className={styles["container-slider"]}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1 }}
+      className={styles["container-slider"]}
+    >
       {dataSlider.map((obj, index) => {
         return (
           <div
@@ -60,6 +66,6 @@ export default function Slider() {
           ></div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -1,8 +1,13 @@
+import { motion } from "framer-motion";
 import styles from "./styles.module.css";
 const index = () => {
   return (
     <section className={styles["sections"]}>
-      <a
+      <motion.a
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1 }}
         className={styles["sections-box"]}
         href="https://www.uhg.edu.py/academic/carrers"
       >
@@ -17,9 +22,13 @@ const index = () => {
           <h3 className={styles["sections-box--h2"]}>CARRERAS</h3>
           {/* <p className={styles["sections-box--p"]}>Always online to help you</p> */}
         </div>
-      </a>
+      </motion.a>
 
-      <a
+      <motion.a
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1 }}
         className={styles["sections-box"]}
         href="https://www.uhg.edu.py/contact"
       >
@@ -34,9 +43,13 @@ const index = () => {
           <h3 className={styles["sections-box--h2"]}>CONTACTO</h3>
           {/* <p className={styles["sections-box--p"]}>Always online to help you</p> */}
         </div>
-      </a>
+      </motion.a>
 
-      <a
+      <motion.a
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        whileInView={{ opacity: 1 }}
         className={styles["sections-box"]}
         href="https://www.uhg.edu.py/academic/postgraduate"
       >
@@ -51,7 +64,7 @@ const index = () => {
           <h3 className={styles["sections-box--h2"]}>POSTGRADOS</h3>
           {/* <p className={styles["sections-box--p"]}>Always online to help you</p> */}
         </div>
-      </a>
+      </motion.a>
     </section>
   );
 };
