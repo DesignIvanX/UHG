@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import BtnSlider from "./BtnSlider/index";
 import dataSlider from "./DataSlider/index";
 import styles from "./styles.module.css";
+import Image from "next/image";
 export default function Slider() {
   const [slideIndex, setSlideIndex] = useState(1);
 
@@ -44,7 +45,11 @@ export default function Slider() {
                 : `${styles["slide"]}`
             }
           >
-            <img src={`/static/slider/img${index + 1}.png`} />
+            <Image
+              src={`/static/slider/img${index + 1}.png`}
+              width="1000"
+              height="500"
+            />
           </div>
         );
       })}

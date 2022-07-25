@@ -9,6 +9,10 @@
 }
 .sections-box {
   cursor: pointer;
+  transition: 500ms transform;
+}
+.sections-box:hover {
+  transform: scale(0.9);
 }
 .sections-box--image {
 }

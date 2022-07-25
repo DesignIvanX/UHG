@@ -46,10 +46,10 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="https://evirtual-uhg.edu.py/web/css/themes/chamilo/images/header-logo.png"
-              width="300px"
-              height="75px"
+            <Image
+              src="/static/footer/logoUhg.png"
+              width={300}
+              height={75}
               alt="logo de uhg e-virtual"
             />
           </a>

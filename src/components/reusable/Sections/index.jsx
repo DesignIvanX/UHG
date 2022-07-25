@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import styles from "./styles.module.css";
 const index = () => {
   return (
@@ -12,9 +13,11 @@ const index = () => {
         href="https://www.uhg.edu.py/academic/carrers"
       >
         <div className={styles["sections-box-image"]}>
-          <img
+          <Image
             src="/static/sections/carrer.png"
             alt=""
+            width={260}
+            height={150}
             className={styles["sections-box--img"]}
           />
         </div>
@@ -33,9 +36,11 @@ const index = () => {
         href="https://www.uhg.edu.py/contact"
       >
         <div className={styles["sections-box-image"]}>
-          <img
+          <Image
             src="/static/sections/contact.png"
             alt=""
+            width={260}
+            height={150}
             className={styles["sections-box--img"]}
           />
         </div>
@@ -54,9 +59,11 @@ const index = () => {
         href="https://www.uhg.edu.py/academic/postgraduate"
       >
         <div className={styles["sections-box-image"]}>
-          <img
+          <Image
             src="/static/sections/postgraduate.png"
             alt=""
+            width={260}
+            height={150}
             className={styles["sections-box--img"]}
           />
         </div>
