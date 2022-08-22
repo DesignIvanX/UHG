@@ -177,6 +177,16 @@ const Seo = ({
       {/* SEO schema  */}
       <script type="application/ld+json">{JSON.stringify(ldJson)}</script>
       {/* SEO schema end  */}
+      {/* Analitics */}
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-Q229GL8HW4"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'G-Q229GL8HW4');
+      </script>
     </Head>
   );
 };

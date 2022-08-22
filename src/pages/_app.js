@@ -1,12 +1,14 @@
 import Canva from "@components/Canva";
-import Lazy from "@components/reusable/Lazy/Lazy";
+import Head from "next/head";
 import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <Canva>
-      <Component {...pageProps} />
-    </Canva>
+    <>
+      <Canva>
+        <Component {...pageProps} />
+      </Canva>
+    </>
   );
 };
 
