@@ -178,15 +178,29 @@ const Seo = ({
       <script type="application/ld+json">{JSON.stringify(ldJson)}</script>
       {/* SEO schema end  */}
       {/* Analitics */}
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-Q229GL8HW4"
-      ></script>
+      {/* <script async src=""></script>
       <script>
         window.dataLayer = window.dataLayer || []; function gtag()
         {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-Q229GL8HW4');
-      </script>
+        gtag('js', new Date()); gtag('config', '');
+      </script> */}
+
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=G-Q229GL8HW4`}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Q229GL8HW4', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
     </Head>
   );
 };
