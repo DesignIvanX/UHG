@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { FaDigitalOcean } from "react-icons/fa";
 
 const Seo = ({
   title,

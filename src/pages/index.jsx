@@ -2,7 +2,6 @@ import Seo from "@seo/Seo";
 import WhatsApp from "@components/reusable/WhatsApp/WhatsApp";
 import Testimonials from "@components/reusable/Testimonials/Testimonials";
 import Slider from "@components/reusable/Slider/Slider";
-import Form from "@components/reusable/Form/Form";
 import Items from "@components/reusable/Items/Items";
 import Sections from "@components/reusable/Sections/index";
 import Video from "@components/reusable/Video/index";
@@ -61,7 +60,6 @@ function Home() {
           <Items />
         </div>
         {/* <Modal /> */}
-        <Form />
         <WhatsApp number={"+595985286032"} />
       </main>
     </div>
