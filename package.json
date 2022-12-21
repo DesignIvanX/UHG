@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-do-expressions": "7.16.7",
-    "axios": "^0.27.2",
-    "framer-motion": "^6.5.1",
-    "gray-matter": "^4.0.3",
+    "axios": "0.27.2",
+    "framer-motion": "6.5.1",
+    "gray-matter": "4.0.3",
     "next": "12.1.5",
     "next-mdx-remote": "^4.0.3",
     "react": "18.0.0",

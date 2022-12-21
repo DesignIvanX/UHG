@@ -68,7 +68,6 @@ const AcademicDetails = ({ data }) => {
                   <div>
                     {data.requirements ? (
                       <div>
-                        {" "}
                         {data.requirements.map((item) => {
                           return (
                             <div key={data.name + "0"}>
@@ -77,56 +76,7 @@ const AcademicDetails = ({ data }) => {
                                   styles["info__content__info__box__hidden--p"]
                                 }
                               >
-                                {item[0]}
-                              </p>
-                              <p
-                                className={
-                                  styles["info__content__info__box__hidden--p"]
-                                }
-                              >
-                                {item[1]}
-                              </p>
-                              <p
-                                className={
-                                  styles["info__content__info__box__hidden--p"]
-                                }
-                              >
-                                {item[2]}
-                              </p>
-                              <p
-                                className={
-                                  styles["info__content__info__box__hidden--p"]
-                                }
-                              >
-                                {item[3]}
-                              </p>
-                              <p
-                                className={
-                                  styles["info__content__info__box__hidden--p"]
-                                }
-                              >
-                                {item[4]}
-                              </p>
-                              <p
-                                className={
-                                  styles["info__content__info__box__hidden--p"]
-                                }
-                              >
-                                {item[5]}
-                              </p>
-                              <p
-                                className={
-                                  styles["info__content__info__box__hidden--p"]
-                                }
-                              >
-                                {item[6]}
-                              </p>
-                              <p
-                                className={
-                                  styles["info__content__info__box__hidden--p"]
-                                }
-                              >
-                                {item[7]}
+                                {item}
                               </p>
                             </div>
                           );
@@ -184,8 +134,22 @@ const AcademicDetails = ({ data }) => {
                   </div>
                 </div>
               </div>
+              <div className={styles["info__content__info__box"]}>
+                <h3 className={styles["info__content__info__box--h3"]}>
+                  DESCARGAR PLAN DE ESTUDIO
+                </h3>
+                <i className={styles["fas fa-chevron-down"]}></i>
+                <div className={styles["info__content__info__box__hidden"]}>
+                  <div>
+                    <a href={data.download} download>
+                      Descargar
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <div></div>
           <div className={styles["info__content__text"]}>
             <div className={styles["info__content__text__box"]}>
               <h3 className={styles["info__content__text__box--h3"]}>
@@ -203,3 +167,54 @@ const AcademicDetails = ({ data }) => {
 };
 
 export default AcademicDetails;
+{
+  /* <p
+                                className={
+                                  styles["info__content__info__box__hidden--p"]
+                                }
+                              >
+                                {item[1]}
+                              </p>
+                              <p
+                                className={
+                                  styles["info__content__info__box__hidden--p"]
+                                }
+                              >
+                                {item[2]}
+                              </p>
+                              <p
+                                className={
+                                  styles["info__content__info__box__hidden--p"]
+                                }
+                              >
+                                {item[3]}
+                              </p>
+                              <p
+                                className={
+                                  styles["info__content__info__box__hidden--p"]
+                                }
+                              >
+                                {item[4]}
+                              </p>
+                              <p
+                                className={
+                                  styles["info__content__info__box__hidden--p"]
+                                }
+                              >
+                                {item[5]}
+                              </p>
+                              <p
+                                className={
+                                  styles["info__content__info__box__hidden--p"]
+                                }
+                              >
+                                {item[6]}
+                              </p>
+                              <p
+                                className={
+                                  styles["info__content__info__box__hidden--p"]
+                                }
+                              >
+                                {item[7]}
+                              </p> */
+}
