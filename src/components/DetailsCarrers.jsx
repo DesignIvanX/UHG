@@ -141,7 +141,7 @@ const AcademicDetails = ({ data }) => {
                 <i className={styles["fas fa-chevron-down"]}></i>
                 <div className={styles["info__content__info__box__hidden"]}>
                   <div>
-                    <a href={`/PDF${data.download}`} download>
+                    <a href={`/static/PDF${data.download}`} download>
                       Descargar
                     </a>
                   </div>
